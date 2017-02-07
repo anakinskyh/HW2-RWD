@@ -1,0 +1,45 @@
+
+#content-wrapper h1{
+    font-size: 24px;
+    color: gray;
+}
+
+.card-wrapper{
+    width:250px;
+}
+
+.card-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0px;
+    padding:  0px;
+}
+
+.card-wrapper a{
+    text-decoration: none;
+    color: gray;
+}
+
+.card-wrapper p{
+    text-decoration: none;
+}
+
+.card-wrapper:hover p{
+    color: #87486b;;
+}
+
+@media screen and (max-width: 1000px){
+    #quick-menu{
+        display: none
+    }
+}
+
+@media screen and (max-width: 640px){
+    #quick-menu{
+        display: none
+    }
+
+    #content-wrapper h1{
+        font-size: 18px
+    }
+}

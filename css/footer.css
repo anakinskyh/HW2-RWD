@@ -1,0 +1,17 @@
+#footer-wrapper p{
+    margin: 5px;
+}
+
+#footer-wrapper a{
+    text-decoration: none
+}
+
+@media screen and (max-width: 1000px){
+    
+}
+
+@media screen and (max-width: 640px){
+    #footer-wrapper p{
+        font-size: 10px;
+    }
+}

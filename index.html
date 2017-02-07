@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
 <title></title>
-<meta charset="utf-8"/>
+<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/w3.css">
-<body>
-    <div id='header' class='w3-container w3-teal w3-layout-row'>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/content.css">
+<link rel="stylesheet" href="css/footer.css">
+
+<body class='w3-display-contianer'>
+    <div id='header' class='w3-container'>
         <h1>Chula</h1>
     </div>
 
-    <div id='nav-wrapper' class='w3-display-container w3-blue w3-layout-row'>
+    <div id='nav-wrapper' class='w3-container'>
         <ul id='nav' class='w3-cyan w3-navbar'>
             <li><a><i class='fa fa-home fa-lg'></i>หน้าแรก</a></li>
             <li><a>เกี่ยวกับเรา</a></li>
@@ -24,48 +28,62 @@
         <!--<h1>what</h1>-->
     </div>
 
-    <div id='front-wraper' class='w3-display-container w3-layout-row'>
-        <img src="res/front.jpg"/>
-    </div>
+    <div id='front-wraper' class='w3-container'>
+        <img src="res/front.jpg" style="width: 100%;"/>
+</div>
+<div id='content-wrapper' class='w3-container w3-margin-top'>
 
-    <div id='content-wrapper' class='w3-row w3-display-container w3-layout-row'>
+    <div class='w3-col l9'>
+        <div>
+            <h1><i class='fa fa-file-text-o'></i> ความสำเร็จ</h1>
 
-        <div id='quick-menu' class='w3-col s4 w3-display-topright'>
-            <h2><i class='fa fa-star-o'></i> เมนูด่วน</h2>
+            <div class='card-wrapper'>
+                <div class='w3-hover-shadow w3-container w3-padding-0 w3-round'>
+                    <a href="#">
+                        <img src="res/ach1.jpg" />
+                        <div class='w3-container'>
+                            <p>นิสิต วิศวฯ คอมฯ จุฬาฯ แชมป์โลก Microsoft Imagin Cup 2016 ประเภทเกมส์...</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
         </div>
 
-        <div id='content' class='w3-col s8 w3-display-topleft'>
-            <div>
-                <h2><i class='fa fa-book'></i> ความสำเร็จ</h2>
-            </div>
-            <div>
-                <h2><i class='fa fa-book'></i> สัมมนา/ประชุมวิชาการ</h2>
-            </div>
-            <div>
-                <h2><i class='fa fa-book'></i> เรื่องทั่วไป</h2>
-            </div>
-            <div>
-                <h2><i class='fa fa-book'></i> บัณฑิตศึกษา</h2>
-            </div>
-            <div>
-                <h2><i class='fa fa-book'></i> ปริญญาบัณฑิต</h2>
-            </div>
-            <div>
-                <h2><i class='fa fa-book'></i> ทุนการศึกษา</h2>
-            </div>
-            <div>
-                <h2><i class='fa fa-book'></i> กิจกรรมนิสิต</h2>
-            </div>
-            <div>
-                <h2><i class='fa fa-book'></i> ฝึกงาน-หางาน</h2>
-            </div>
+        <div>
+            <h1><i class='fa fa-file-text-o'></i> สัมมนา/ประชุมวิชาการ</h1>
         </div>
-        
-    </div>
 
-    <div id='footer-wrapper' class='w3-display-container w3-layout-row' >
-        <p>เว็บไซต์นี้แสดงผลได้ดีที่สุดใน Google Chrome</p>
-        <img src="res/ChulaEngineeringComputer-formal.png"/>
+        <div>
+            <h1><i class='fa fa-file-text-o'></i> เรื่องทั่วไป</h1>
+        </div>
+
+        <div>
+            <h1><i class='fa fa-file-text-o'></i> บัณฑิตศึกษา</h1>
+        </div>
     </div>
+    <div id='quick-menu' class='w3-col l3'>
+        <h1><i class="fa fa-star-o"></i> เมนูด่วน</h1>
+        <ul class="w3-ul w3-gray">
+            <li><i class="fa fa-caret-right "></i> หน้าแรก</li>
+            <li><i class="fa fa-caret-right "></i> หน้าแรก</li>
+            <li><i class="fa fa-caret-right "></i> หน้าแรก</li>
+        </ul>
+    </div>
+</div>
+
+<div id='footer-wrapper' class='w3-container w3-center'>
+    <p>เว็บไซต์นี้แสดงผลได้ดีที่สุดใน <a href='#'>Google Chrome</a></p>
+    <img src="res/ChulaEngineeringComputer-formal.png" style="width:80%;max-width: 600px;"/>
+<p>ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</p>
+<p>ชั้น 17 อาคาร วิศวกรรมศาสตร์ 4 (เจริญวิศวกรรม)</p>
+<p>ถนนพญาไท แขวงวังใหม่ เขตปทุมวัน</p>
+<p>กรุงเทพมหานคร 10330</p>
+
+<p>โทรศัพท์ (+66) 0-2218-6956-7 โทรสาร (+66) 0-2218-6955</p>
+<p>www.cp.eng.chula.ac.th <i class='fa fa-facebook'></i>
+    <i class='fa fa-twitter'></i> <i class='fa fa-instagram'></i> @cpengchula</p>
+</div>
 </body>
+
 </html>
