@@ -76,6 +76,12 @@
     /*background: white;*/
 }
 
+ul.w3-ul li {
+    padding: 0px;
+    border-bottom: 0px;
+    margin: 5px;
+}
+
 @media screen and (max-width: 1000px) {
     #quick-menu {
         display: none

@@ -1,6 +1,10 @@
-body>.w3-container{
+body>.w3-container {
     max-width: 1190px;
     margin: 0px;
-    padding: 0px;
+    /*padding: 0px;*/
     margin: auto;
+}
+
+.w3-container {
+    padding: 2px;
 }
