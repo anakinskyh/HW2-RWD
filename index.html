@@ -5,85 +5,303 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/w3.css">
+
+<link rel="stylesheet" href="css/header.css">
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/content.css">
 <link rel="stylesheet" href="css/footer.css">
 
 <body class='w3-display-contianer'>
-    <div id='header' class='w3-container'>
-        <h1>Chula</h1>
+    <div id='header' class='w3-container header-wrapper'>
+        <div class='w3-col l8 left-header'>
+            <img src="res/ChulaEngineeringComputer-formal.png" style="width:80%;max-width: 600px;" />
+            <img src="res/thai_welcome.jpg" style="width:80%;max-width: 600px;" />
+        </div>
+        <div class='w3-col l4 right-header'>
+            <ul class='w3-navbar'>
+                <li class='w3-padding-top w3-padding-bottom'><a href='#'>ผู้สนใจ <i class='fa fa-caret-down'></i></a></li>
+                <li class='w3-padding-top w3-padding-bottom'><a href='#'>นิสิตปัจจุบัน <i class='fa fa-caret-down'></i></a></li>
+                <li class='w3-padding-top w3-padding-bottom'><a href='#'>ศิษย์เก่า <i class='fa fa-caret-down'></i></a></li>
+            </ul>
+
+            <div class='search'>
+                <input/>
+                <button>Search</button>
+            </div>
+        </div>
     </div>
 
     <div id='nav-wrapper' class='w3-container'>
-        <ul id='nav' class='w3-cyan w3-navbar'>
-            <li><a><i class='fa fa-home fa-lg'></i>หน้าแรก</a></li>
-            <li><a>เกี่ยวกับเรา</a></li>
-            <li><a>ผลงานของเรา</a></li>
-            <li><a>วิจัย/บริการวิชาการ</a></li>
-            <li><a>บัณฑิตศึกษา</a></li>
+        <ul id='nav' class='w3-navbar navbar'>
+            <li class='home'><a><i class='fa fa-home fa-lg'></i> หน้าแรก</a></li>
+            <li><a>เกี่ยวกับเรา <i class='fa fa-caret-down'></i></a></li>
+            <li><a>ผลงานของเรา <i class='fa fa-caret-down'></i></a></li>
+            <li><a>วิจัย/บริการวิชาการ <i class='fa fa-caret-down'></i></a></li>
+            <li><a>บัณฑิตศึกษา <i class='fa fa-caret-down'></i></a></li>
             <li><a>ติดต่อเรา</a></li>
             <li><a>เชื่อมต่อ</a></li>
+            <!--<li class='w3-right'><a><i class='fa fa-bars'></i></a></li>-->
         </ul>
-
-        <!--<h1>what</h1>-->
     </div>
 
-    <div id='front-wraper' class='w3-container'>
-        <img src="res/front.jpg" style="width: 100%;"/>
-</div>
-<div id='content-wrapper' class='w3-container w3-margin-top'>
+    <div id='front-wrapper' class='w3-container'>
+        <div class='w3-container w3-padding'>
+            <img src="res/front.jpg" />
+        </div>
+    </div>
+    <div id='content-wrapper' class='w3-container'>
+        <div class='w3-container w3-margin' style="background: #d9d9d9">
+            <div class='w3-col l9'>
+                <div class='topic-group'>
+                    <h1><i class='fa fa-file-text-o'></i> ความสำเร็จ</h1>
 
-    <div class='w3-col l9'>
-        <div>
-            <h1><i class='fa fa-file-text-o'></i> ความสำเร็จ</h1>
-
-            <div class='card-wrapper'>
-                <div class='w3-hover-shadow w3-container w3-padding-0 w3-round'>
-                    <a href="#">
-                        <img src="res/ach1.jpg" />
-                        <div class='w3-container'>
-                            <p>นิสิต วิศวฯ คอมฯ จุฬาฯ แชมป์โลก Microsoft Imagin Cup 2016 ประเภทเกมส์...</p>
+                    <div class='w3-container'>
+                        <div class='card-wrapper'>
+                            <div class='w3-hover-shadow w3-container w3-padding-0 w3-round w3-margin-right w3-margin-left w3-margin-bottom w3-white'>
+                                <a href="#">
+                                    <img src="res/ach1.jpg" />
+                                    <div class='w3-container description'>
+                                        <p>นิสิต วิศวฯ คอมฯ จุฬาฯ แชมป์โลก Microsoft Imagin Cup 2016 ประเภทเกมส์...</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                    </a>
+
+                        <div class='card-wrapper'>
+                            <div class='w3-hover-shadow w3-container w3-padding-0 w3-round w3-margin-right w3-margin-left w3-margin-bottom w3-white'>
+                                <a href="#">
+                                    <img src="res/ach2.jpg" />
+                                    <div class='w3-container description'>
+                                        <p>ภาควิชาวิศวกรรมคอมพิวเตอร์ ขอแสดงความยินดี ผศ.ดร.เกริก ภิรมย์โสภา...</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class='card-wrapper'>
+                            <div class='w3-hover-shadow w3-container w3-padding-0 w3-round w3-margin-right w3-margin-left w3-margin-bottom w3-white'>
+                                <a href="#">
+                                    <img src="res/ach3.jpg" />
+                                    <div class='w3-container description'>
+                                        <p>ภาควิชาวิศวกรรมคอมพิวเตอร์ ขอแสดงความยินดีกับนิสิตที่ได้รับรางวัล ในงาน NSC2016 ครั้ง...</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="w3-btn w3-padding w3-margin-left w3-round">อ่านความสำเร็จทั้งหมด  <i class='fa fa-caret-right'></i></button>
+
+                </div>
+
+                <div class='topic-group'>
+                    <h1><i class='fa fa-file-text-o'></i> สัมมนา/ประชุมวิชาการ</h1>
+
+                    <div class='w3-container'>
+                        <div class='card-wrapper'>
+                            <div class='w3-hover-shadow w3-container w3-padding-0 w3-round w3-margin-right w3-margin-left w3-margin-bottom w3-white'>
+                                <a href="#">
+                                    <img src="res/sem1.jpg" />
+                                    <div class='w3-container description'>
+                                        <p>เอกสารแจก งานสัมมนาบัณฑิตศึกษา 2558...</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class='card-wrapper'>
+                            <div class='w3-hover-shadow w3-container w3-padding-0 w3-round w3-margin-right w3-margin-left w3-margin-bottom w3-white'>
+                                <a href="#">
+                                    <img src="res/sem2.jpg" />
+                                    <div class='w3-container description'>
+                                        <p>เอกสารจากงาน ILP Forum เรื่อง “Big Data”</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="w3-btn w3-padding w3-margin-left w3-round">อ่านสัมมนา/ประชุมวิชาการทั้งหมด   <i class='fa fa-caret-right'></i></button>
+                </div>
+
+                <div class='topic-group'>
+                    <h1><i class='fa fa-file-text-o'></i> เรื่องทั่วไป</h1>
+
+                    <div class='w3-container'>
+                        <div class='card-wrapper'>
+                            <div class='w3-hover-shadow w3-container w3-padding-0 w3-round w3-margin-right w3-margin-left w3-margin-bottom w3-white'>
+                                <a href="#">
+                                    <img src="res/gen1.png" />
+                                    <div class='w3-container description'>
+                                        <p><strong>(Update11/05/2559)</strong>กำหนดการสำหรับนิสิตใหม่ ภาคการศึกษาต้น ปีการศึกษา...</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class='card-wrapper'>
+                            <div class='w3-hover-shadow w3-container w3-padding-0 w3-round w3-margin-right w3-margin-left w3-margin-bottom w3-white'>
+                                <a href="#">
+                                    <img src="res/gen2.png" />
+                                    <div class='w3-container description'>
+                                        <p>(Update 2/03/2559 )ประกาศรับสมัครทุนอุดหนุนการศึกษาระดับบัณฑิตศึกษา...</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class='card-wrapper'>
+                            <div class='w3-hover-shadow w3-container w3-padding-0 w3-round w3-margin-right w3-margin-left w3-margin-bottom w3-white'>
+                                <a href="#">
+                                    <img src="res/gen3.png" />
+                                    <div class='w3-container description'>
+                                        <p><strong>ประกาศรับสมัครงานตำแหน่ง อาจารย์ A-5 ปฏิบัติงานที่ภาควิชาวิศวกรรมคอมพิวเตอร์ ...<strong></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="w3-btn w3-padding w3-margin-left w3-round">อ่านเรื่องทั่วไปทั้งหมด  <i class='fa fa-caret-right'></i></button>
+                </div>
+
+                <div class='topic-group'>
+                    <h1><i class='fa fa-file-text-o'></i> บัณฑิตศึกษา</h1>
+
+                    <div class='w3-container'>
+                        <div class='card-wrapper'>
+                            <div class='w3-hover-shadow w3-container w3-padding-0 w3-round w3-margin-right w3-margin-left w3-margin-bottom w3-white'>
+                                <a href="#">
+                                    <img src="res/se1.png" />
+                                    <div class='w3-container description'>
+                                        <p>ประกาศกำหนดการสอบโครงร่าง-วิทยานิพนธ์ และ อื่นๆ ประจำปี 2559...</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class='card-wrapper'>
+                            <div class='w3-hover-shadow w3-container w3-padding-0 w3-round w3-margin-right w3-margin-left w3-margin-bottom w3-white'>
+                                <a href="#">
+                                    <img src="res/se2.png" />
+                                    <div class='w3-container description'>
+                                        <p>(Update 31/08/2559)ประกาศผลทุนอุดหนุนการศึกษาเพื่อทำหน้าที่ผู้ช่วยสอน ประจำภาคต้น ปีกา...</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class='card-wrapper'>
+                            <div class='w3-hover-shadow w3-container w3-padding-0 w3-round w3-margin-right w3-margin-left w3-margin-bottom w3-white'>
+                                <a href="#">
+                                    <img src="res/se3.jpg" />
+                                    <div class='w3-container description'>
+                                        <p> update 24/08/2559 ประกาศรับสมัครหลักสูตรระดับบัณฑิตศึกษา ภาคปลาย ...</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class='card-wrapper'>
+                            <div class='w3-hover-shadow w3-container w3-padding-0 w3-round w3-margin-right w3-margin-left w3-margin-bottom w3-white'>
+                                <a href="#">
+                                    <img src="res/se4.png" />
+                                    <div class='w3-container description'>
+                                        <p><strong>Update 24/08/2559</strong>–ประกาศรับสมัครทุนอุดหนุนการศึกษาระดับบัณฑิตศึกษา ส...</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class='card-wrapper'>
+                            <div class='w3-hover-shadow w3-container w3-padding-0 w3-round w3-margin-right w3-margin-left w3-margin-bottom w3-white'>
+                                <a href="#">
+                                    <img src="res/se5.png" />
+                                    <div class='w3-container description'>
+                                        <p><strong>(Update 24/08/2559)</strong>ประกาศรับสมัครทุนอุดหนุนการศึกษาระดับบัณฑิตศึกษา...</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class='card-wrapper'>
+                            <div class='w3-hover-shadow w3-container w3-padding-0 w3-round w3-margin-right w3-margin-left w3-margin-bottom w3-white'>
+                                <a href="#">
+                                    <img src="res/se6.png" />
+                                    <div class='w3-container description'>
+                                        <p><strong> (Update24/08/2559 )</strong>ประกาศรับสมัครทุนอุดหนุนการศึกษาเพื่อทำหน้าที่ผู้...</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <button class="w3-btn w3-padding w3-margin-left w3-round">อ่านบัณฑิตศึกษาทั้งหมด  <i class='fa fa-caret-right'></i></button>
+                    </div>
                 </div>
             </div>
 
-        </div>
-
-        <div>
-            <h1><i class='fa fa-file-text-o'></i> สัมมนา/ประชุมวิชาการ</h1>
-        </div>
-
-        <div>
-            <h1><i class='fa fa-file-text-o'></i> เรื่องทั่วไป</h1>
-        </div>
-
-        <div>
-            <h1><i class='fa fa-file-text-o'></i> บัณฑิตศึกษา</h1>
+            <div id='quick-menu' class='w3-col l3'>
+                <h1><i class="fa fa-star-o"></i> เมนูด่วน</h1>
+                <ul class="w3-ul w3-gray ">
+                    <li><i class="fa fa-caret-right "></i> หน้าแรก</li>
+                    <li><i class="fa fa-caret-right "></i> หน้าแรก</li>
+                    <li><i class="fa fa-caret-right "></i> หน้าแรก</li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div id='quick-menu' class='w3-col l3'>
-        <h1><i class="fa fa-star-o"></i> เมนูด่วน</h1>
-        <ul class="w3-ul w3-gray">
-            <li><i class="fa fa-caret-right "></i> หน้าแรก</li>
-            <li><i class="fa fa-caret-right "></i> หน้าแรก</li>
-            <li><i class="fa fa-caret-right "></i> หน้าแรก</li>
-        </ul>
+
+    <div class='news-wrapper w3-container'>
+        <div class='w3-margin w3-padding w3-container'>
+            <div class='w3-col l4'>
+                <h1><i class='fa fa-paperclip'></i> ข่าวภาควิชาฯ ในหน้าสื่อ</h1>
+                <table class='w3-table-all'>
+                    <tr class='table-header'>
+                        <th>หัวข้อข่าว</th>
+                        <th>แหล่งข่าว</th>
+                    </tr>
+                    <tr>
+                        <td><a href='#'>Keynote: IoT:“50 Billions Devices Jam”</a></td>
+                        <td>Expo, Keynote</td>
+                    </tr>
+                    <tr>
+                        <td><a href='#'>Keynote: Big Data Applications in Healthcare</a></td>
+                        <td>Expo, Keynote</td>
+                    </tr>
+                    <tr>
+                        <td><a href='#'>กองสงครามไซเบอร์</a></td>
+                        <td>KOMCHADLUEK</td>
+                    </tr>
+                    <tr>
+                        <td><a href='#'>ซิงเกิลเกตเวย์ คุมเสรีภาพโลกออนไลน์</a></td>
+                        <td>ต่างคนต่างคิด</td>
+                    </tr>
+                </table>
+
+                <button class="read-more w3-margin w3-btn w3-padding w3-round">อ่านความสำเร็จทั้งหมด  <i class='fa fa-caret-right'></i></button>
+            </div>
+            <div class='w3-col l6'>
+                <h1><i class='fa fa-play'></i> วิดีโอ</h1>
+                <div class='video-wrapper w3-container'>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/RFYSRB9EqmU" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 
-<div id='footer-wrapper' class='w3-container w3-center'>
-    <p>เว็บไซต์นี้แสดงผลได้ดีที่สุดใน <a href='#'>Google Chrome</a></p>
-    <img src="res/ChulaEngineeringComputer-formal.png" style="width:80%;max-width: 600px;"/>
-<p>ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</p>
-<p>ชั้น 17 อาคาร วิศวกรรมศาสตร์ 4 (เจริญวิศวกรรม)</p>
-<p>ถนนพญาไท แขวงวังใหม่ เขตปทุมวัน</p>
-<p>กรุงเทพมหานคร 10330</p>
+    <div id='footer-wrapper' class='w3-container w3-center w3-padding'>
+        <p>เว็บไซต์นี้แสดงผลได้ดีที่สุดใน <a href='#'>Google Chrome</a></p>
+        <img src="res/ChulaEngineeringComputer-formal.png" style="width:80%;max-width: 600px;" />
+        <p>ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</p>
+        <p>ชั้น 17 อาคาร วิศวกรรมศาสตร์ 4 (เจริญวิศวกรรม)</p>
+        <p>ถนนพญาไท แขวงวังใหม่ เขตปทุมวัน</p>
+        <p>กรุงเทพมหานคร 10330</p>
 
-<p>โทรศัพท์ (+66) 0-2218-6956-7 โทรสาร (+66) 0-2218-6955</p>
-<p>www.cp.eng.chula.ac.th <i class='fa fa-facebook'></i>
-    <i class='fa fa-twitter'></i> <i class='fa fa-instagram'></i> @cpengchula</p>
-</div>
+        <p>โทรศัพท์ (+66) 0-2218-6956-7 โทรสาร (+66) 0-2218-6955</p>
+        <p>www.cp.eng.chula.ac.th <i class='fa fa-facebook'></i>
+            <i class='fa fa-twitter'></i> <i class='fa fa-instagram'></i> @cpengchula</p>
+    </div>
 </body>
 
 </html>

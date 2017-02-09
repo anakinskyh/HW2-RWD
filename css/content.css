@@ -1,45 +1,95 @@
-
-#content-wrapper h1{
+#content-wrapper h1 {
     font-size: 24px;
     color: gray;
 }
 
-.card-wrapper{
-    width:250px;
+.card-wrapper {
+    width: 260px;
+    /*height: 300px;*/
+    display: inline-block;
 }
 
-.card-wrapper img{
+.card-wrapper img {
     max-width: 100%;
-    max-height: 100%;
+    /*max-height: 100%;*/
     margin: 0px;
-    padding:  0px;
+    padding: 0px;
 }
 
-.card-wrapper a{
+.card-wrapper a {
     text-decoration: none;
     color: gray;
 }
 
-.card-wrapper p{
+.card-wrapper p {
     text-decoration: none;
 }
 
-.card-wrapper:hover p{
-    color: #87486b;;
+.card-wrapper:hover p {
+    color: #87486b;
+    ;
 }
 
-@media screen and (max-width: 1000px){
-    #quick-menu{
+.card-wrapper>div {
+    display: inline-block;
+}
+
+.topic-group button,
+.read-more {
+    display: block;
+    margin-left: 25px;
+    background: #cc8fa1;
+    margin-bottom: 10px;
+}
+
+.topic-group h1 {
+    font-size: 24px;
+    color: gray;
+    margin-left: 5px;
+    margin-top: 25px;
+}
+
+.news-wrapper h1 {
+    margin-left: 5px;
+    font-size: 24px;
+    color: gray;
+}
+
+.news-wrapper td {
+    color: #87486b;
+    text-decoration: none;
+}
+
+.news-wrapper td a {
+    text-decoration: none;
+}
+
+.news-wrapper .table-header th {
+    background: #a47582;
+    color: white;
+}
+
+.description {
+    height: 6em;
+    line-height: 1em;
+    overflow: hidden;
+    /*background: white;*/
+}
+
+@media screen and (max-width: 1000px) {
+    #quick-menu {
         display: none
     }
 }
 
-@media screen and (max-width: 640px){
-    #quick-menu{
+@media screen and (max-width: 640px) {
+    #quick-menu {
         display: none
     }
-
-    #content-wrapper h1{
+    #content-wrapper h1 {
+        font-size: 18px
+    }
+    .news-wrapper h1 {
         font-size: 18px
     }
 }

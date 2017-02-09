@@ -1,4 +1,6 @@
-body>div{
+body>.w3-container{
     max-width: 1190px;
+    margin: 0px;
+    padding: 0px;
     margin: auto;
 }
